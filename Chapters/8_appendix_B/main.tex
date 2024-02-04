@@ -1,0 +1,231 @@
+\chapter{Parameter Tables}
+
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{ c c c }
+ Parameter & Biological representation & Value in Atri et al. \\
+ \hline
+ $k_{flux}$ & Maximum total $Ca^{2+}$ flux through all $IP_3R$ & $8.1$ {$\mu M s^{-1} $}\\
+ \hline
+ $\mu_0$ & Proportion of $IP_3R$ that are activated at $IP_3=0 \mu M$ & $0.567$\\
+ &(site 1 activated in the absence of bound $IP_3$) &\\
+ \hline
+ $k_{IP_3}$ & Half-activation term for binding of $IP_3$ to site 1 & $4.0\mu M$ \\
+ \hline
+ $K_{act}$ & Half-activation term for binding of $Ca^2+$ to site 2 & $0.7 \mu M$ \\
+ \hline
+ $b$ & Proportion of $IP_3R$ that have site 2 & $0.111$ \\
+ \hline
+ $V_e$ & Maximal SERCA pump rate & $2 \mu Ms^{-1}$\\
+ \hline
+ $K_e$ & Half-activation constant for SERCA term & $0.1 \mu M $\\
+ \hline
+ {$\delta$} & Constant rate of $Ca^{2+}$ influx into cytosol & $0.01 \mu Ms^{-1}$ \\
+ \hline
+ $\tau_n$ & Time constant for dynamics of $n$ (for activation of site 3) & $2.0 s$\\
+ \hline
+ $K_{inh}$ & Half-deactivation constant for $Ca^{2+}$ binding to site 3 & $0.7 \mu M$\\
+\end{tabular}
+\end{center}
+\caption{Parameters used in the \citeA{atri} model, shown in equations \eqref{origatri1st}, \eqref{origatri2nd} in Chapter 2. {A typical value of p used is $0.8 \mu M$.}}\label{origatriparam}
+\end{table}
+
+\begin{table}[h!!!t!!!b!!!p]
+\begin{center}
+\begin{tabular}{ c c c }
+Parameter & Biological representation & Value in Li-Rinzel\\
+\hline
+ $v_1$ & Maximal rate of $Ca^{2+}$ release & $40s^{-1}$\\
+ \hline
+ $k_{\mu}$ & Half-activation constant for $IP_3$ binding & $0.2\mu M$\\
+ \hline
+ $k_1$ & Half-activation constant for $Ca^{2+}$ binding to & $0.4\mu M$\\
+ & activation site & \\
+ \hline
+ $\epsilon$ & $Ca^{2+}$ leak out of ER & $0.02s^{-1}$\\
+ \hline
+ $c_1$ & Parameter used to adjust amplitude of ER &$0.185$\\
+ & $Ca^{2+}$ oscillations & \\
+ \hline
+ $V_e$ & Maximal SERCA pump rate &$0.6\mu Ms^{-1}$\\
+ \hline
+ $K_e$ & Half-activation constant for SERCA pumps & $0.18\mu M$\\
+ \hline
+ $A$ & A parameter to characterize the slow time scale of & $1s^{-1}$\\
+ &  $Ca^{2+}$ inactivation & \\
+ \hline
+ $k_2$ & Half-activation constant for $Ca^{2+}$ & $0.4\mu M$\\
+ & binding to inhibitory site & \\
+\end{tabular}
+\end{center}
+\caption{Parameters used the \citeA{lirinzel} model, shown in equations \eqref{lirinzeltwovar1}, \eqref{lirinzeltwovar2} in Chapter 2. }\label{twovarminmodelparam}
+\end{table}
+
+\begin{table}[h!!!t!!!b!!!p]
+\begin{center}
+\begin{tabular}{ c c }
+Parameter & Value in Li-Rinzel\\
+ \hline
+ $\delta$ & $0.01$\\
+ \hline
+ $J_{in}$ & $0.8\mu Ms^{-1}$\\
+ \hline
+ $V_p$ & $1.8 \mu Ms^{-1}$\\
+ \hline
+ $K_p$ & $0.1\mu M$\\
+\end{tabular}
+\end{center}
+\caption{Parameters used in the \citeA{lirinzel} Three--Variable model, \eqref{lirinzelminimal1st}-\eqref{lirinzelminimal3rd} in Chapter 2.}\label{lirinzelminimaltable}
+\end{table}
+
+\begin{table}[h!!!t!!!b!!!p]
+\begin{center}
+\begin{tabular}{ c c c }
+Parameter & Biological representation & Value in Mak et al.\\
+\hline
+$P_{max}$& Maximal open probability of $IP_3R$ & $0.81$ \\
+\hline
+$K_{act}$ & Half-activation constant for $Ca^{2+}$ & $0.21 \pm 0.02 \mu M$ \\
+& binding to activation site & \\
+\hline
+$H_{act}$ & Hill coefficient for $Ca^{2+}$ binding to activation site & $1.9 \pm 0.3$ \\
+\hline
+$K_{inh}$ & Half-activation constant for $Ca^{2+}$ & \\
+& binding to inhibitory site & \\
+\hline
+$H_{inh}$ & Hill coefficient for $Ca^{2+}$ &$3.9 \pm 0.7$ \\
+& binding to inhibitory site & \\
+\hline
+$K_{\infty}$ & Maximal inhibitory $Ca^{2+}$ concentration & $52 \pm 4 \mu M$ \\
+\hline
+$K_{IP_3}$ & Half-activation constant for $IP_3$ &$50 \pm 4 \mu M$ \\
+& binding to activation site & \\
+\hline
+$H_{IP_3}$ & Hill coefficient for $IP_3$ & $4 \pm 0.5$ \\
+& binding to activation site &\\
+\end{tabular}
+\end{center}
+\caption{Parameters used in the equation for open probability of the $IP_3R$ by \citeA{Mak1998}, \eqref{foskett}, in Chapter 3.}\label{foskettparam}
+\end{table}
+
+\begin{table}[h!!!t!!!b!!!p]
+\begin{center}
+\begin{tabular}{ c c c }
+Parameter & Biological representation & Value in Kowalewski et al.\\
+\hline
+$S_{ER}/V_{ER}$ & Surface-to-volume ratio of the ER & $1\mu M$\\
+\hline
+$S_{ER}/V{cyt}$ & Surface-to-volume ratio of the cytoplasm & $1 \mu M$\\
+\hline
+$r_{ER}=V_{ER}/V_{cyt}$ & Volume ratio of ER & $0.185$\\
+\hline
+$\beta$ & Buffering factor & $1$\\
+\hline
+$X$ & Relative amount of $Ca^{2+}$ binding to SERCA & $0.4$\\
+\hline
+$Y$ & Relative amount of $Ca^{2+}$ binding to PMCA & $0.6$\\
+\hline
+$I_{deg}$ & $IP_3$ degradation constant & $0.01 s^{-1}$\\
+\hline
+$t_0$ & G signalling start time & $500s$\\
+\hline
+$k_G$ & G production rate & $0.2s^{-1}$\\
+\hline
+$I_G$ & G degradation rate & $0.5 s^{-1}$\\
+\hline
+$K_{1/2,G}$ & G signalling inactivation constant & $0.5 \mu M$\\
+\hline
+$v_{IP_3R}$ & Maximum permeability across the $IP_3R$ & $70 nm/s$\\
+\hline
+$d_1$ & $IP_3$ dissociation & $0.13 \mu M$\\
+\hline
+$d_2$ & $Ca^{2+}$ inhibition dissociation & $0.5 \mu M$\\
+\hline
+$d_3$ & $IP_3$ dissociation & $9.4 nM$\\
+\hline
+$d_5$ & $Ca^{2+}$ activation dissociation & $82.34 nM$\\
+\hline
+$v_1$ & Maximum $Ca^{2+}$ channel permeability & $10 \mu M/s$\\
+\hline
+$V_{leak ER}$ & $Ca^{2+}$ leak permeability across the ER & $2 nm/s$\\
+& membrane &\\
+\hline
+$v_{SOC}$ & SOC permeability, per $\mu M$ & $0.12 nm/(s\mu M)$\\
+\hline
+$[Ca^{2+}]_{ER,min}$ & Threshold concentration of ER $Ca^{2+}$ & \\
+\hline
+$V_{leak PM}$ & $Ca^{2+}$ leak permeability across the cell & $0.012 nm/s$\\
+&  plasma membrane & \\
+\hline
+$k_{SOC}$ & SOC production constant & $1.7 \mu M/s$\\
+\hline
+$I_{SOC}$ & SOC degradation constant & $0.002 s^{-1}$\\
+\hline
+$v_{CIF}$ & CIF permeability across the ER & $1 \mu m/s$\\
+& membrane & \\
+\hline
+$k_{CIF}$ & CIF production rate & $2$x$10^{-4}s^{-1}$\\
+\hline
+$[CIF]_{max}$ & Maximum CIF concentration & $0.1\mu M$\\
+\hline
+$V_{p}$ & Maximum flux across PMCA & $0.147 \mu m \mu M/s$\\
+\hline
+$V_{e}$ & Maximum flux across SERCA & $1.9 \mu m \mu M/s$\\
+\hline
+$K_{p}$ & PMCA activation constant & $0.2 \mu M$\\
+\hline
+$K_{e}$ & Half-activation for SERCA pump & $0.5 \mu M$\\
+\end{tabular}
+\end{center}
+\caption{Parameters used in the model by \citeA{swedish}, \eqref{swedishc}-\eqref{ERCIF}, in Chapter 4.}\label{swedishparam}
+\end{table}
+
+\begin{table}[h!!!t!!!b!!!p]
+\begin{center}
+\begin{tabular}{ c c c }
+ Parameter & Biological representation & Value in Sneyd et al.\\
+ \hline
+ $k_{flux}$ & Maximum total $Ca^{2+}$ flux through all $IP_3R$ & $4.8$\\
+ \hline
+ $\mu_0$ & Proportion of $IP_3R$ that are activated at $IP_3=0 \mu M$ & $0.567$\\
+ &(domain 1 activated in the absence of bound IP3) &\\
+ \hline
+ $k_{\mu}$ & Half-activation term for binding of $IP_3$ for domain 1 & $4.0\mu M$ \\
+ \hline
+ $k_1$ & Half-activation term for binding of $Ca^2+$ & $0.7 \mu M$ \\
+ \hline
+ $b$ & Proportion of $IP_3R$ that have domain 2 & $0.111$ \\
+ \hline
+ $V_e$ & Maximal serca pump rate & $20 \mu Ms^{-1}$\\
+ \hline
+ $K_e$ & Half-activation constant for serca term & $0.06 \mu M $\\
+ \hline
+ $\delta$ & Constant rate of $Ca^{2+}$ influx into cytosol & $0.01 \mu Ms^{-1}$ \\
+ \hline
+ $\alpha_1$ & Constant influx & $1 \mu Ms^{-1}$\\
+ \hline
+ $\alpha_2$ & Stimulation dependent influx & $0.2 s^{-1}$\\
+ \hline
+ $V_p$ & Maximal rate of leak out of cytosol over & $24 \mu Ms^{-1}$ \\
+ & plasma membrane &\\
+ \hline
+ $\tau_n$ & Time constant for dynamics of n & $2.0 s$\\
+ & (for activation of domain 3) & \\
+ \hline
+ $k_2$ & Half-deactivation constant for n & $0.7 \mu M$\\
+ \hline
+ $\gamma$ & Parameter used to adjust amplitude of ER & \\
+ & $Ca^{2+}$ oscillations & \\
+ \hline
+ $v_4$ & Maximum rate of $IP_3$ production & $6$ \\
+ \hline
+ $k_4$ & $Ca^{2+}$ sensitivity of PLC activity & $1.1$\\ 
+ \hline
+ $\alpha$ &  & $0.97$\\
+ \hline
+ $\beta_{osc}$ & Linear rate of $IP_3$ breakdown/dephosphorylation & $0.08 s^{-1}$\\
+ &  rate &\\
+\end{tabular}
+\end{center}
+\caption{Parameters used in the model by \citeA{sneyd}, \eqref{sneydatri1st}-\eqref{sneydatri4th} in Appendix A.}\label{sneydatritable}
+\end{table}

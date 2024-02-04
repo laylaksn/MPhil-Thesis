@@ -1,0 +1,45 @@
+\chapter{MATLAB Code}
+\begin{lstlisting}
+%Code used to simulate the Atri model
+
+c0=0.1;
+n0=0.5;
+
+[t,y] = ode45(@ODE,[0,80],[c0,n0]);
+plot(t,y(:,1),t,y(:,2),':','Linewidth', 2)
+
+xlabel('Time (s)')
+ylabel('Concentration (\muM)')
+legend('Cytosolic Ca^2^+','Proportion of non inactivated IP_3Rs')
+ylim([0 5])
+set(gca, 'fontsize', 15)
+function dydt=ODE(t,yy)
+c=yy(1);
+n=yy(2);
+
+Kflux=8.1;
+p=1;
+kip=4;
+mu0=0.567;
+mu1=0.433;
+mup=(p+mu0*kip)/(kip+p);
+%mup=1.5;
+%mup=1;
+%mup=0.5;
+kact=0.7;
+b=0.111;
+V1=0.889;
+Ve=2;
+Ke=0.1;
+B=0.01;
+Jchannel=Kflux*n*((kact*b+(b+V1)*c)/(kact+c))*mup;
+Jpump=Ve*c/(Ke+c);
+Jleak=B;
+kinh=0.7;
+taun=2;
+
+dydt= [Jchannel-Jpump+Jleak;
+kinh^2/(2*(kinh^2+c^2))-n/taun];
+end
+\end{lstlisting}
+Note that other MATLAB scripts written for this project using \textit{ode45} are structured similarly.
